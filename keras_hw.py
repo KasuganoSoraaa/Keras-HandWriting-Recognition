@@ -10,6 +10,7 @@ from keras.layers import Flatten
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras import backend as K
+from keras.models import load_model
 
 batch_size = 128
 num_classes = 10
@@ -84,3 +85,6 @@ model.fit(
 score = model.evaluate(x_test, y_test, verbose=0)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+
+# save model
+model.save('model.h5')

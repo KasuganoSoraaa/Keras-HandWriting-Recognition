@@ -5,3 +5,6 @@ Maybe there are many mistakes, please point out them  XD
 
 # Keras_hw.py
 Keras_hw.py is the training code
+
+# test.py
+to recognize your own picture. (size:28*28*1)
